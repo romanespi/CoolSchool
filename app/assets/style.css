@@ -1,0 +1,267 @@
+:root {
+    --color1: #0ee6fc;
+    --color2: #4cacfc;
+    --color3: #017782;
+    --color4: #018997;
+    --color5: #025396;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid #00000028;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.alias{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background-image: linear-gradient(to right, #05fffe, #37c2fe, #4eadfe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color5);
+    margin: 0rem .5rem;
+}
+
+.menu a:hover{
+    color: var(--color2);
+}
+
+.students{
+    display: none;
+}
+
+.groups{
+    display: none;
+}
+
+.subjects{
+    display: none;
+}
+
+.inscription {
+    display: none;
+}
+
+.studentRegistrationForm{
+    border: 1px solid #00000028;
+    color: var(--color5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.studentRegistrationForm h3{
+    margin-top: 0rem;
+}
+
+.dataPersonal{
+    border: 1px solid #00000028;
+    border-radius: .3rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    height: 1.5rem;
+}
+
+.dataPersonal:hover,
+.dataPersonal:focus{
+    border: 1px solid #05ffff63;
+    outline: none;
+    color: #025396;
+}
+
+.btnRegistrar{
+    padding: .4rem 1rem;
+    border: 1px solid #00000028;
+    margin-top: 1rem;
+    border-radius: .3rem;
+    color: #025396;
+    background-color: #fff;
+}
+
+.btnRegistrar:hover{
+    background-image: linear-gradient(to right, #05fffe, #37c2fe, #4eadfe);
+    color: #fff; 
+}
+
+.studentsTable{
+    color: #025396;
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+
+.studentsTable th, .studentsTable td{
+    border: 1px solid #00000028;
+    padding: .2rem;
+    margin: 0 auto;
+}
+
+#btnActions{
+    display: flex;
+    justify-content: space-around;
+}
+
+#btnDelete{
+    width: 1rem;
+}
+
+#btnEdit{
+    width: 1rem;
+}
+
+.groupRegistrationForm{
+    border: 1px solid #00000028;
+    color: var(--color5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.groupRegistrationForm h3{
+    margin-top: 0rem;
+}
+
+.dataGroup{
+    border: 1px solid #00000028;
+    border-radius: .3rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    height: 1.5rem;
+}
+
+.dataGroup:hover,
+.dataGroup:focus{
+    border: 1px solid #05ffff63;
+    outline: none;
+    color: #025396;
+}
+
+.groupsTable{
+    color: #025396;
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+
+.groupsTable th, .groupsTable td{
+    border: 1px solid #00000028;
+    padding: .2rem;
+    margin: 0 auto;
+}
+
+.subjectRegistrationForm{
+    border: 1px solid #00000028;
+    color: var(--color5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.subjectRegistrationForm h3{
+    margin-top: 0rem;
+}
+
+.dataSubject{
+    border: 1px solid #00000028;
+    border-radius: .3rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    height: 1.5rem;
+}
+
+.dataSubject:hover,
+.dataSubject:focus{
+    border: 1px solid #05ffff63;
+    outline: none;
+    color: #025396;
+}
+
+.subjectsTable{
+    color: #025396;
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+
+.subjectsTable th, .subjectsTable td{
+    border: 1px solid #00000028;
+    padding: .2rem;
+    margin: 0 auto;
+}
+
+
+.studentInscriptionForm{
+    border: 1px solid #00000028;
+    color: var(--color5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 4rem auto 1rem auto;
+}
+
+.studentInscriptionForm div{
+    margin-bottom: 3rem;
+}
+
+#studentName, #studentAge, #studentAverage{
+    color: #025396;
+    font-weight: 400;
+}
+
+.studentInscriptionForm h3{
+    margin-top: 0rem;
+}
+
+.studentSubject{
+    border: 1px solid #00000028;
+    border-radius: .3rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    height: 1.5rem;
+}
+
+.studentSubject:hover,
+.studentSubject:focus{
+    border: 1px solid #05ffff63;
+    outline: none;
+    color: #025396;
+}
+
+.studentSubjectsTable{
+    color: #025396;
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+
+.studentSubjectsTable th, .studentSubjectsTable td{
+    border: 1px solid #00000028;
+    padding: .2rem;
+    margin: 0 auto;
+}
+

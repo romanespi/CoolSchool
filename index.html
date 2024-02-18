@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolSchool</title>
+    <link rel="stylesheet" href="app/assets/style.css">
+    <link rel="icon" href="app/assets/school.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo" href="/index.html">
+            <img src="app/assets/school.png" alt="CoolSchool">
+            <h2 class="alias">CoolSchool</h2>
+        </a>
+        <nav class="menu">
+            <a id="btnStudents" href="#">Alumnos</a>
+            <a id="btnGroups" href="#">Grupos</a>
+            <a id="btnSubjects" href="#">Clases</a>
+        </nav>
+    </header>
+    <main>
+        <section id="students" class="students">
+            <h2>Estudiantes</h2>
+            <div class="studetnForm">
+                <form id="studentRegistrationForm" class="studentRegistrationForm">
+                    <h3>Registro de Alumnos</h3>
+                    <label for="firstName">Nombre:</label><br>
+                    <input class="dataPersonal" type="text" id="firstName" name="firstName"><br>
+                    <label for="lastName">Apellidos:</label><br>
+                    <input class="dataPersonal" type="text" id="lastName" name="lastName"><br>
+                    <label for="age">Edad:</label><br>
+                    <input class="dataPersonal" type="number" id="age" name="age" min="1"><br>
+                    <input class="btnRegistrar" type="submit" value="Registrar">
+                </form>
+                <table class="studentsTable" id="studentsTable">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Edad</th>
+                        <th>Acciones</th>
+                    </tr> 
+                </table>
+            </div>
+        </section>
+        <section id="groups" class="groups">
+            <h2>Grupos</h3>
+                <div class="groupsForm">
+                    <form id="groupRegistrationForm" class="groupRegistrationForm">
+                        <h3>Registro de Grupos</h3>
+                        <label for="groupName">Grupo:</label><br>
+                        <input class="dataGroup" type="text" id="groupName" name="groupName"><br>
+                        <input class="btnRegistrar" type="submit" value="Registrar">
+                    </form>
+                    <table class="groupsTable" id="groupsTable">
+                        <tr>
+                            <th>Grupo</th>
+                            <th>Acciones</th>
+                        </tr> 
+                    </table>
+                </div>
+        </section>
+        <section id="subjects" class="subjects">
+            <h2>Materias</h2>
+            <div class="subjectsForm">
+                <form id="subjectRegistrationForm" class="groupRegistrationForm">
+                    <h3>Registro de Materias</h3>
+                    <label for="subjectName">Materias:</label><br>
+                    <input class="dataSubject" type="text" id="subjectName" name="subjectName"><br>
+                    <input class="btnRegistrar" type="submit" value="Registrar">
+                </form>
+                <table class="subjectsTable" id="subjectsTable">
+                    <tr>
+                        <th>Materias</th>
+                        <th>Acciones</th>
+                    </tr> 
+                </table>
+            </div>
+        </section>
+        <section id="inscription" class="inscription">
+            <div class="studentEditForm">
+                <form id="studentInscriptionForm" class="studentInscriptionForm">
+                    <div>
+                        <h3 id="studentName"></h3>
+                        <h3 id="studentAge"></h3>
+                        <h3 id="studentAverage"></h3>
+                    </div>
+                    <h3>Inscripción a materias</h3>
+                    <label for="studentSubject">Seleccione la materia:</label><br>
+                    <select name="studentSubject" id="studentSubject" class="studentSubject">
+                    </select>
+                    <label for="studentGrade">Ingrese la calificación:</label><br>
+                    <input class="studentSubject" type="number" id="studentGrade" name="studentGrade">
+                    <input id="btnSingUp" class="btnRegistrar" type="submit" value="Inscribir">
+                    <input id="btnAssing" class="btnRegistrar" type="submit" value="Asignar calificación">
+                </form>
+                <table class="studentSubjectsTable" id="studentSubjectsTable">
+                    <tr>
+                        <th>Materias</th>
+                        <th>Calificaciones</th>
+                        <th>Acciones</th>
+                    </tr> 
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="app/App.js"></script>
+</body>
+</html>
